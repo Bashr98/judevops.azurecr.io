@@ -33,19 +33,19 @@ class CalculatorHelper():
             return f"User(username={self.username}, password={self.password})"
 
     def add(self, a, b):
-        self.logger.debug("Addingme {a} + {b}", extra=self.log_properties)
+        self.logger.debug(f"Addingme {a} + {b}", extra=self.log_properties)
         return a + b
 
     def subtract(self, a, b):
-        self.logger.debug("sub {a} - {b}", extra=self.log_properties)
+        self.logger.debug(f"sub {a} - {b}", extra=self.log_properties)
         return a - b
 
     def multiply(self, a, b):
-        self.logger.debug("multiply {a} * {b}", extra=self.log_properties)
+        self.logger.debug(f"multiply {a} * {b}", extra=self.log_properties)
         return a * b    
 
     def divide(self, a, b):
-     self.logger.debug("divide {a} / {b}", extra=self.log_properties)
+     self.logger.debug(f"divide {a} / {b}", extra=self.log_properties)
      return a / b
 
     def register_user(self, username, password):
